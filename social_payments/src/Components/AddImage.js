@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-const Home = () => {
+function AddImage() {
   return (
     <div>
         <nav>
@@ -10,14 +10,11 @@ const Home = () => {
             <a>Product Page</a>
         </nav><br/>
 
-<form>
-    <input type="text" placeholder='Username'/> <br/>
-    <input type="text" placeholder='Password'/><br/>
-   <Link to="/product-page"> <button>Log In</button> </Link>
-</form>
-
+        <h2>Upload Of The Product</h2>
+        <input type="file"/>
+       <Link to="/schedule-content"><button>Publish</button></Link> 
     </div>
   )
 }
 
-export default Home
+export default AddImage

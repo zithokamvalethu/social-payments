@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-const Home = () => {
+function ProductRegisteration() {
   return (
     <div>
         <nav>
@@ -10,14 +10,11 @@ const Home = () => {
             <a>Product Page</a>
         </nav><br/>
 
-<form>
-    <input type="text" placeholder='Username'/> <br/>
-    <input type="text" placeholder='Password'/><br/>
-   <Link to="/product-page"> <button>Log In</button> </Link>
-</form>
-
+        <h1>Do you want to register a new product</h1>
+     <Link to="/product-page"><button>Yes</button></Link>   
+       <Link to="/dashboard"><button>No</button></Link> 
     </div>
   )
 }
 
-export default Home
+export default ProductRegisteration
