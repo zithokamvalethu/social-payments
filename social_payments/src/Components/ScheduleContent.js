@@ -11,7 +11,8 @@ function ScheduleContent() {
 
         <h1>Input desired time of publishing content</h1>
         <button>Publish Instantly</button><br/>
-
+        <h1>OR</h1>
+<p>Schedule</p>
         <input type="datetime-local"/>
         <button>Publish Content</button>
     </div>
